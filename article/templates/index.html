@@ -1,9 +1,47 @@
 {% extends "base.html" %}
 {%block body%}
 	<div class="panel panel-primary">
-		<div class="panel-heading">Panel heading without title</div>
+		<div class="panel-heading">Listado de art&iacute;culos</div>
 		<div class="panel-body">
-		Panel content
+			{%if not articulos%}
+			<p>No hay articulos</p>
+			{%endif%}
+
+			<div class="table-responsive">
+				<table class="table table-hover table-bordered">
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Edit</th>
+						<th>Delete</th>
+						<th>Date added</th>
+						<th>Date modified</th>
+					</tr>
+					{%for a in articulos%}
+					<tr>
+						<td>
+							<strong>{{a.name}}</strong>
+						</td>
+						<td>
+							<small>{{a.description}}</small>
+						</td>
+						<td>
+							<a href="#">Edit</a>
+						</td>
+						<td>
+							<a href="#">delete</a>
+						</td>
+						<td>
+							{{a.date_added}}
+						</td>
+						<td>
+							{{a.date_modified}}
+						</td>
+					</tr>
+					{%endfor%}
+				</table>
+				<a href="#" class="btn btn-success pull-right"><span class="glyphicon .glyphicon-plus"></span> Add a new Article</a>
+			</div>
 		</div>
 	</div>
 
