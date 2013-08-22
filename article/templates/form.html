@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{%block body%}
+<form method="post">
+	{% csrf_token %}
+	<table>
+		{{formulario}}
+		<tr>
+			<td></td>
+			<td>
+				<input type="submit" class="btn btn-success" value="Crear articulo" >
+			</td>
+		</tr>
+	</table>
+</form>
+{%endblock%}

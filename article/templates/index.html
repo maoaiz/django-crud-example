@@ -26,10 +26,10 @@
 							<small>{{a.description}}</small>
 						</td>
 						<td>
-							<a href="#">Edit</a>
+							<a href="/edit/{{a.id}}">Edit</a>
 						</td>
 						<td>
-							<a href="#">delete</a>
+							<a href="/delete/{{a.id}}">delete</a>
 						</td>
 						<td>
 							{{a.date_added}}
@@ -40,7 +40,7 @@
 					</tr>
 					{%endfor%}
 				</table>
-				<a href="#" class="btn btn-success pull-right"><span class="glyphicon .glyphicon-plus"></span> Add a new Article</a>
+				<a href="/new" class="btn btn-success pull-right"><span class="glyphicon .glyphicon-plus"></span> Add a new Article</a>
 			</div>
 		</div>
 	</div>
