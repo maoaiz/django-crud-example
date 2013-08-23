@@ -3,6 +3,10 @@ django-crud-example
 
 Django crud example
 
+## Install
+  $ python manage.py syncdb
+  $ python manage.py runserver
+
 
 ## Docs
 
