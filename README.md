@@ -19,3 +19,8 @@ Django crud example
 
 * [django models attributes](http://www.maestrosdelweb.com/images/2012/05/django-models.jpg)
 * [django forms attributes](http://www.maestrosdelweb.com/images/2012/06/django-forms.pdf)
+
+
+## Live Demo
+
+[view on mauricioaizaga.com](http://demos.mauricioaizaga.com/)
